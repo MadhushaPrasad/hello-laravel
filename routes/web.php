@@ -14,17 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('user');
+//    return view('user');
+    return redirect('about');
 });
 
 //Route::get('/about',function (){
 //    return view('about');
 //});
 
-Route::view('/about','about'); // url,view name
+Route::view('/about', 'about'); // url,view name
 
-Route::view('/contact-us','contact'); // url,view name
-Route::view('/user','user'); // url,view name
+Route::view('/contact-us', 'contact'); // url,view name
+Route::view('/user', 'user'); // url,view name
 //Route::get('/{name}', function ($name) {// {pass data with route}
 //    echo $name;
 //    return view('user');
@@ -32,5 +33,5 @@ Route::view('/user','user'); // url,view name
 
 Route::get('/{name}', function ($name) {// {pass data with route} -> type 02
     echo $name;
-    return view('contact',['name'=>$name]);
+    return view('contact', ['name' => $name]);
 });
