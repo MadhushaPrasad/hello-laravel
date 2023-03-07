@@ -25,7 +25,12 @@ Route::view('/about','about'); // url,view name
 
 Route::view('/contact-us','contact'); // url,view name
 Route::view('/contact-us','contact'); // url,view name
-Route::get('/{name}', function ($name) {// {pass data with route}
+//Route::get('/{name}', function ($name) {// {pass data with route}
+//    echo $name;
+//    return view('user');
+//});
+
+Route::get('/{name}', function ($name) {// {pass data with route} -> type 02
     echo $name;
-    return view('user');
+    return view('contact',['name'=>$name]);
 });
