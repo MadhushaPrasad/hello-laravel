@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('user');
 });
 
-Route::get('/about',function (){
-    return view('about');
-});
+//Route::get('/about',function (){
+//    return view('about');
+//});
+
+Route::get('/about','about'); // url,view name
