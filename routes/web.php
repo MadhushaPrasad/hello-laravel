@@ -24,7 +24,7 @@ Route::get('/', function () {
 Route::view('/about','about'); // url,view name
 
 Route::view('/contact-us','contact'); // url,view name
-Route::view('/contact-us','contact'); // url,view name
+Route::view('/user','user'); // url,view name
 //Route::get('/{name}', function ($name) {// {pass data with route}
 //    echo $name;
 //    return view('user');
