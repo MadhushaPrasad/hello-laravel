@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
-    function index()
+    function saveUser()
     {
-        echo "Hello form controller";
+        return view('about');
+//        return "form data saved";
     }
 }
