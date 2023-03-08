@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
-    function saveUser()
+    function saveUsers(Request $req)
     {
-        return view('about');
-//        return "form data saved";
+        return $req->input();
+//        return "Return data from UserController";
     }
 }

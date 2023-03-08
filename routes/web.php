@@ -51,5 +51,5 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('user', [UserController::class, 'saveUser']);
-
+Route::post('addUser', [UserController::class, 'saveUsers']);
+Route::view('login', 'user');
