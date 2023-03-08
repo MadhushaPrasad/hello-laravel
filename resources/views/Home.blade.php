@@ -7,4 +7,12 @@
 
     {{--  get last URL --}}
     <a href="{{URL::previous()}}">Last URL is :{{URL::previous()}} </a>
+
+
+    <br>
+
+    <form action="{{URL::to('/save_data')}}" method="post">
+        <input type="text" name="name" id="name">
+        <button>Submit</button>
+    </form>
 </div>
